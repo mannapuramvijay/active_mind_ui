@@ -34,6 +34,9 @@ const navigation = [
   {
     name: 'Contact Us', href: '/contact'
   },
+  {
+    name: 'Employee Portal', href: '/employee'
+  },
 ]
 export default navigation;
 

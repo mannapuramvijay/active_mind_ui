@@ -21,8 +21,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
+      <nav className="flex items-center justify-start p-6 lg:px-8" aria-label="Global">
+        <div className="flex">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">{verbiage.companyName}</span>
             <Image
@@ -40,18 +40,13 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+        <Popover.Group className="hidden lg:flex lg:gap-x-12 ml-3">
           {map(navigation, (item, idx) => !isEmpty(item.nested)
             ? <PopoverMenu name={item.name} elements={item.nested} key={idx} />
             : <Link href={item.href as string} key={idx} className="text-sm font-semibold leading-6 text-gray-900">
               {item.name}
             </Link>)}
         </Popover.Group>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link href="/login" className="text-sm font-semibold leading-6 text-gray-900">
-            {verbiage.login} <span aria-hidden="true">&rarr;</span>
-          </Link>
-        </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
@@ -80,13 +75,6 @@ export default function Header() {
                   : <Link href={item.href as string} key={idx} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                     {item.name}
                   </Link>)}
-              </div>
-              <div className="py-6">
-                <Link
-                  href="/login"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                  {verbiage.login}
-                </Link>
               </div>
             </div>
           </div>

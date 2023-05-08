@@ -33,8 +33,10 @@ export default function RootLayout({
         <link rel="icon" type="image/x-icon" href="favicon.ico"/>
       </head>
       <body className="font-sans font-mono bg-white">
-        <Header />
-        {children}
+        <main>
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   )

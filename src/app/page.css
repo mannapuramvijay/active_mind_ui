@@ -1,0 +1,42 @@
+@media only screen and (min-width: 1024px) {
+    .background-drop {
+        width: 50%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
+    .background-pic {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: auto;
+    }
+    .blank-pic {
+        display: block;
+        z-index: 1;
+        left: 30%;
+    }
+}
+.background-drop {
+    z-index: -1;
+}
+.background-pic {
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    vertical-align: middle;
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+.blank-pic {
+    /* display: none; */
+    --tw-translate-x: 50%;
+    fill: #fff;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    vertical-align: middle;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
