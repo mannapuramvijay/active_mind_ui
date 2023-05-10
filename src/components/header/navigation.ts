@@ -7,7 +7,8 @@ import {
   WrenchScrewdriverIcon,
   PaperAirplaneIcon,
   ClipboardDocumentCheckIcon,
-  GlobeAltIcon
+  GlobeAltIcon,
+  UserCircleIcon
 } from '@heroicons/react/24/outline';
 
 const navigation = [
@@ -18,7 +19,8 @@ const navigation = [
       { name: 'Recruitment Solution', href: '/services/recruitment', icon: MagnifyingGlassIcon },
       { name: 'Overseas Education', href: '/services/overseas', icon: PaperAirplaneIcon },
       { name: 'University Assignment & Exams', href: '/services/assignment', icon: ClipboardDocumentCheckIcon },
-      { name: 'HR & Immigration', href: '/services/immigration', icon: GlobeAltIcon }
+      { name: 'HR & Immigration', href: '/services/immigration', icon: GlobeAltIcon },
+      { name: 'Employee Portal', href: '/services/employee', icon: UserCircleIcon }
     ]
   },
   {
@@ -33,10 +35,7 @@ const navigation = [
   },
   {
     name: 'Contact Us', href: '/contact'
-  },
-  {
-    name: 'Employee Portal', href: '/employee'
-  },
+  }
 ]
 export default navigation;
 

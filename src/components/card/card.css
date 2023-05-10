@@ -1,0 +1,40 @@
+.card-back {
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.card-head {
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+    line-height: 1.75rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.card-content {
+    --tw-text-opacity: 1;
+    color: rgb(75 85 99 / var(--tw-text-opacity));
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+}
+
+.card-data {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.card-data>a {
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
+    font-weight: 600;
+    text-decoration: inherit;
+}

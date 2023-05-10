@@ -1,0 +1,10 @@
+@media (min-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .contact-card-grid {
+        gap: 2rem;
+        grid-column: span 2 / span 2;
+    }
+}
+
